@@ -1,6 +1,6 @@
 import WebSocket, { WebSocketServer } from "ws";
 
-const wss = new WebSocketServer({ port: 8080 });
+const wss = new WebSocketServer({ port: process.env.PORT });
 
 /**
  * @type { WebSocket[]} clients - List of Clients, keyed by an identifier.
